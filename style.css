@@ -1,0 +1,220 @@
+/* =========================
+   FONT
+========================= */
+
+@font-face {
+  font-family: "BigBlueTerm";
+  src: url("fonts/BigBlueTerm437NerdFontMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   BASE
+========================= */
+
+body {
+  background: #000;
+  color: #cfcfcf;
+  font-family: "BigBlueTerm", monospace;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  padding: 18px;
+}
+
+main {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: #9aff8a;
+}
+
+/* =========================
+   NAV
+========================= */
+
+nav {
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+nav a {
+  color: #8aff80;
+  text-decoration: none;
+  margin-right: 12px;
+}
+
+nav a::before { content: "["; }
+nav a::after  { content: "]"; }
+
+nav a:hover {
+  color: #fff;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+p {
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+
+a {
+  color: #7dffb2;
+}
+
+/* =========================
+   TITLES
+========================= */
+
+h2 {
+  font-size: 16px;
+  color: #8aff80;
+  margin: 40px 0 16px;
+  letter-spacing: 1px;
+}
+
+h2::before {
+  content: ">> ";
+  color: #2aff7a;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 25px 0 10px;
+  color: #7dffb2;
+}
+
+/* =========================
+   SEPARATORS
+========================= */
+
+.separator {
+  margin: 40px 0;
+  color: #444;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed #333;
+  margin: 30px 0;
+}
+
+.block {
+  border-left: 2px solid #2aff7a;
+  padding-left: 14px;
+  margin: 28px 0;
+  color: #b8ffcc;
+  font-size: 14px;
+}
+
+/* =========================
+   POST TEXT
+========================= */
+
+.post-title {
+  font-size: 15px;
+  color: #9aff8a;
+  margin-bottom: 6px;
+}
+
+.post-meta {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  margin-top: 60px;
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+/* =====================================================
+   ASCII TEMPLE SYSTEM (limpio y definitivo)
+===================================================== */
+
+.temple {
+  position: relative;
+  margin: 70px 0;
+}
+
+/* TOPE */
+.temple-top {
+  font-size: 11px;
+  line-height: 1.05;
+  color: #2aff7a;
+  opacity: 0.35;
+}
+
+.temple-top pre {
+  margin: 0;
+}
+
+/* COLUMNAS FONDO */
+.temple-columns {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 100%;
+
+  font-size: 11px;
+  line-height: 1.05;
+  color: #2aff7a;
+  opacity: 0.25;
+
+  pointer-events: none;
+}
+
+/* CONTENIDO */
+.temple-content {
+  position: relative;
+  padding: 70px 40px 40px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .temple-columns {
+    font-size: 9px;
+  }
+
+  .temple-content {
+    padding: 60px 20px 30px;
+  }
+
+}
