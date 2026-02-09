@@ -1,100 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>archivo</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BBS</title>
 
+<link rel="stylesheet" href="style.css">
+<script src="js/ansilove.js"></script>
+</head>
 <body>
 
-<header>
-  <h1>archivo</h1>
-  <nav>
-    <a href="index.html">inicio</a>
-    <a href="lecturas.html">lecturas</a>
-  </nav>
-</header>
+<div class="bbs">
 
-<main>
+  <!-- ANSI -->
+  <div id="menu"></div>
 
-<h2>archivo</h2>
+  <!-- ZONAS CLICKEABLES -->
+  <a href="viewer.html?file=ansi/catedral.ans" class="hit tarot"></a>
+  <a href="viewer.html?file=ansi/jardin.ans" class="hit pizza"></a>
 
-<p>
-biblioteca personal<br>
-notas de lectura<br>
-log irregular
-</p>
-<article class="temple">
-
-<div class="temple-top">
-<pre>
- |___-----___-----___-----___-----___-----___|
- / _ ----- _ \   / _ ----- _ \   / _ ----- _ \
-( (o\_____/o) ) ( (o\_____/o) ) ( (o\_____/o) )
- \__/|||||\__/   \__/=====\__/   \__/=====\__/
-</pre>
 </div>
 
-<pre class="temple-columns">
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-     ||||||||           ||||||||           ||||||||
-</pre>
-
-<div class="temple-content">
-  <div class="post-title">entrada 002</div>
-  <div class="post-meta">2026 / log</div>
-  <p>pruebas del sistema de columnas arquitectónicas.</p>
-  <p>el texto vive dentro del templo.</p>
-</div>
-
-</article>
-
-
-<p>
-<a href="lecturas.html">ver lecturas →</a>
-</p>
-
-</main>
-
-<footer>
-  <p>2026</p>
-</footer>
+<script>
+AnsiLove.render("ansi/jardin.ans", function(canvas){
+  // escala como en el viewer
+  canvas.style.maxWidth = "100%";
+  canvas.style.height = "auto";
+  document.getElementById("menu").appendChild(canvas);
+},{
+  bits:"9",
+  icecolors:1
+});
+</script>
 
 </body>
 </html>
