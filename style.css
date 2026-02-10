@@ -128,7 +128,7 @@ canvas {
 .hit {
   position: absolute;
   display: block;
-  background: rgba(255,0,0,0.3); /* para debug */
+  /*background: rgba(255,0,0,0.3);  para debug */
 }
 
 /* posiciones relativas al canvas */
