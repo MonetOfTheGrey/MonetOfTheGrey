@@ -133,8 +133,8 @@ canvas {
 
 /* posiciones relativas al canvas */
 .hit.tarot {
-  top: 50%;   /* porcentaje respecto al canvas */
+  top: 45%;   /* porcentaje respecto al canvas */
   left: 15%;
-  width: 25%;
-  height: 90%;
+  width: 40%;
+  height: 10%;
 }
